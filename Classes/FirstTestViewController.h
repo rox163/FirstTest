@@ -19,7 +19,7 @@
 
 }
 @property (nonatomic,retain) IBOutlet UITextField *provinceTextField, *cityTextField;
-@property (nonatomic,copy) NSMutableArray *provArray, *ontarioCities, *quebecCities, *pickerData;
+@property (nonatomic,copy) NSMutableArray *provArray, *ontarioCities, *nbCities, *albertaCities, *pickerData;
 
 - (IBAction) switchView;
 - (BOOL) dismissActionSheet: (id)sender;

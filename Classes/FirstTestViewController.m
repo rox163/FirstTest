@@ -10,17 +10,16 @@
 #import "ResultsView.h"
 
 @implementation FirstTestViewController
-@synthesize provinceTextField, cityTextField, pickerData, provArray, ontarioCities, quebecCities;
-
-
+@synthesize provinceTextField, cityTextField, pickerData, provArray, ontarioCities, nbCities, albertaCities;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	provArray = [[NSMutableArray alloc] initWithObjects:@"Ontario", @"Quebec",@"New Brunswick", nil];		
-	ontarioCities = [[NSMutableArray alloc] initWithObjects:@"Ottawa", @"Toronto", nil];
-	quebecCities = [[NSMutableArray alloc] initWithObjects:@"Montreal", @"Quebec city", nil];
+	provArray = [[NSMutableArray alloc] initWithObjects:@"Alberta", @"Ontario",@"New Brunswick", nil];		
+	ontarioCities = [[NSMutableArray alloc] initWithObjects:@"Ajax", @"Aurora", @"Barrie", @"Belleville", @"Ottawa", @"Toronto", nil];
+	albertaCities = [[NSMutableArray alloc] initWithObjects:@"Calgary", @"Edmonton", nil];
+	nbCities = [[NSMutableArray alloc] initWithObjects:@"Fredrichton", @"Moncton", nil];
 	
 	cityTextField.enabled = NO;
 	provinceDone = FALSE;
@@ -49,9 +48,11 @@
 		provinceDone = TRUE;
 		
 		if ([pickerData objectAtIndex:selectedRow]  == [provArray objectAtIndex:0]){
-			pickerData = [ontarioCities mutableCopy];
+			pickerData = [albertaCities mutableCopy];
 		} else if ([pickerData objectAtIndex:selectedRow] == [provArray objectAtIndex:1]) {
-			pickerData = [quebecCities mutableCopy];
+			pickerData = [ontarioCities mutableCopy];
+		} else if ([pickerData objectAtIndex:selectedRow] == [provArray objectAtIndex:2]) {
+			pickerData = [nbCities mutableCopy];
 		}
 	}
 	
