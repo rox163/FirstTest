@@ -16,10 +16,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	provArray = [[NSMutableArray alloc] initWithObjects:@"Alberta", @"Ontario",@"New Brunswick", nil];		
+	provArray = [[NSMutableArray alloc] initWithObjects:@"Alberta", @"Ontario", @"New Brunswick", nil];		
 	ontarioCities = [[NSMutableArray alloc] initWithObjects:@"Ajax", @"Aurora", @"Barrie", @"Belleville", @"Ottawa", @"Toronto", nil];
-	albertaCities = [[NSMutableArray alloc] initWithObjects:@"Calgary", @"Edmonton", nil];
-	nbCities = [[NSMutableArray alloc] initWithObjects:@"Fredrichton", @"Moncton", nil];
+	albertaCities = [[NSMutableArray alloc] initWithObjects:@"Calgary", @"Edmonton", @"Lethbridge", nil];
+	nbCities = [[NSMutableArray alloc] initWithObjects:@"Fredrichton", @"Moncton", @"Saint John", nil];
 	
 	cityTextField.enabled = NO;
 	provinceDone = FALSE;
@@ -130,7 +130,7 @@
 		else if (selectedRow == 1) {
 			cityTextField.text = [pickerData objectAtIndex:selectedRow];
 		}
-		else if (selectedRow== 2) {
+		else if (selectedRow == 2) {
 			cityTextField.text = [pickerData objectAtIndex:selectedRow];
 		}
 	}
