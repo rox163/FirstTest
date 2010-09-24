@@ -10,16 +10,16 @@
 
 @interface FirstTestViewController : UIViewController <UITextFieldDelegate, UIActionSheetDelegate, UIPickerViewDelegate, UIPickerViewDataSource>  {
 
-	UITextField *provinceTextField, *cityTextField;
-	UIActionSheet *pickerSheet;
-	UIToolbar *pickerBar;
-	UIPickerView *pickerView;	
-	NSInteger selectedRow;
-	BOOL provinceDone;
+	UITextField *i_provinceTextField, *i_cityTextField;
+	UIActionSheet *i_pickerSheet;
+	UIToolbar *i_pickerBar;
+	UIPickerView *i_pickerView;	
+	NSInteger i_selectedRowInPicker;
+	BOOL i_provinceTextFieldSelected;
 
 }
-@property (nonatomic,retain) IBOutlet UITextField *provinceTextField, *cityTextField;
-@property (nonatomic,copy) NSMutableArray *provArray, *ontarioCities, *nbCities, *albertaCities, *pickerData;
+@property (nonatomic,retain) IBOutlet UITextField *i_provinceTextField, *i_cityTextField;
+@property (nonatomic,copy) NSMutableArray *provinceArray, *ontarioCities, *nbCities, *albertaCities, *i_pickerData;
 
 - (IBAction) switchView;
 - (BOOL) dismissActionSheet: (id)sender;
