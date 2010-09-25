@@ -50,7 +50,8 @@
 
 - (void) showActionSheet {
 	
-	i_pickerSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
+	i_pickerSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil
+								  destructiveButtonTitle:nil otherButtonTitles: nil];
 	[i_pickerSheet setActionSheetStyle: UIActionSheetStyleBlackTranslucent];
 	
 	CGRect pickerFrame = CGRectMake(0,40,0,0);
@@ -64,8 +65,12 @@
 	i_pickerBar.barStyle = UIBarStyleBlackOpaque;
 	[i_pickerBar sizeToFit];
 
-	UIBarButtonItem *flexspace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-	UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector (dismissActionSheet:)];	
+	UIBarButtonItem *flexspace = [[UIBarButtonItem alloc]
+								  initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self
+								  action:nil];
+	UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]
+								   initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self
+								   action:@selector (dismissActionSheet:)];	
 	NSMutableArray *items = [[NSMutableArray alloc] initWithObjects: flexspace, doneButton, nil];
 	[i_pickerBar setItems:items animated:YES];
 	
