@@ -53,136 +53,145 @@ t1284521277
 s1323
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.h
-c000000004C919AD100000000000001F1
-t1284610769
+c000000004C9BBE5100000000000001F1
+t1285275217
 s497
 i<UIKit/UIKit.h>
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m
-c000000004C903BEA0000000000000A9A
-t1284520938
+c000000004C9BBE510000000000000A9A
+t1285275217
 s2714
 i"FirstTestAppDelegate.h"
 i"FirstTestViewController.h"
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.h
-c000000004C9BA6050000000000000319
-t1285268997
-s793
+c000000004C9CF57C0000000000000342
+t1285354876
+s834
 i<UIKit/UIKit.h>
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m
-c000000004C9BA5EA000000000000143C
-t1285268970
-s5180
+c000000004C9CF5060000000000001900
+t1285354758
+s6400
 i"FirstTestViewController.h"
 i"ResultsView.h"
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.h
-c000000004C969F620000000000000153
-t1284939618
+c000000004C9BBE510000000000000153
+t1285275217
 s339
 i<UIKit/UIKit.h>
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m
-c000000004C92D93500000000000004F1
-t1284692277
-s1265
+c000000004C9CED8500000000000004F3
+t1285352837
+s1267
 i"ResultsView.h"
 i"FirstTestViewController.h"
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.xib
-c000000004C99057E0000000000005F9E
-t1285096830
+c000000004C9BBE510000000000005F9E
+t1285275217
 s24478
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTestViewController.xib
-c000000004C9A70F70000000000006767
-t1285189879
-s26471
+c000000004C9CBBB40000000000006736
+t1285340084
+s26422
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTest_Prefix.pch
-c000000004C903BEB00000000000000BB
-t1284520939
+c000000004C9BBE5100000000000000BB
+t1285275217
 s187
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib
-c000000004C903BEB0000000000004E41
-t1284520939
+c000000004C9BBE510000000000004E41
+t1285275217
 s20033
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTest.LinkFileList
-c000000004C9BA635000000000000025A
-t1285269045
+c000000004C9BBE51000000000000025A
+t1285275217
 s602
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestAppDelegate.o
-t1285269047
+t1285275217
 s51372
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestViewController.o
-t1285269048
+t1285275217
 s64548
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/ResultsView.o
-t1285269047
+t1285275217
 s44556
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/main.o
-t1285269047
+t1285275217
 s6364
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app
-t1285269048
+t1285275217
 s306
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app.dSYM
-t1285269048
+t1285263874
 s102
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest
-t1285269048
+t1285275217
 s27780
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTestViewController.nib
-t1285269046
+t1285275217
 s2421
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/Info.plist
-t1285269045
+t1285275217
 s620
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/MainWindow.nib
-t1285269046
+t1285275217
 s1127
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/PkgInfo
-t1285269045
+t1285275217
 s8
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/ResultsView.nib
-t1285269046
+t1285275217
 s1550
 
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/icon.png
-t1285269046
+t1285275217
 s1323
 
+N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/provinceCitiesDictionary.plist
+t2
+s0
+
 N/Users/iExplode/Documents/IphoneProjects/FirstTest/main.m
-c000000004C903BEB0000000000000170
-t1284520939
+c000000004C9BBE510000000000000170
+t1285275217
 s368
 i<UIKit/UIKit.h>
+
+N/Users/iExplode/Documents/IphoneProjects/FirstTest/provinceCitiesDictionary.plist
+c000000004C9CF80600000000000000B5
+t1285355526
+s181
 
 N/var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch.gch
 t1285269047
 s14904336
 
 NFirstTest-Info.plist
-c000000004C92D4900000000000000372
-t1284691088
+c000000004C9BBE510000000000000372
+t1285275217
 s882
 
 CCheck dependencies
@@ -264,6 +273,9 @@ r1
 xCompileXIB
 x/Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib
 lSLF07#2@25"CompileXIB MainWindow.xib306961845#306961846#0(0"0(0#0#65"/Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib8638131968#662"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/MainWindow.nib /Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib --sdk /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCopyPlistFile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/provinceCitiesDictionary.plist provinceCitiesDictionary.plist
+r0
 
 CCpResource build/Release-iphonesimulator/FirstTest.app/icon.png ../../../Desktop/icon.png
 s306961846.370065

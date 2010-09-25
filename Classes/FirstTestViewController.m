@@ -10,56 +10,42 @@
 #import "ResultsView.h"
 
 @implementation FirstTestViewController
-@synthesize i_provinceTextField, i_cityTextField, i_pickerData, provinceArray, ontarioCities, nbCities, albertaCities;
+@synthesize i_provinceTextField, i_provinceCities, i_cities, i_provinces;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	provinceArray = [[NSMutableArray alloc] initWithObjects:@"Alberta", @"Ontario", @"New Brunswick", nil];		
-	ontarioCities = [[NSMutableArray alloc] initWithObjects:@"Ajax", @"Aurora", @"Barrie", @"Belleville", @"Ottawa", @"Toronto", nil];
-	albertaCities = [[NSMutableArray alloc] initWithObjects:@"Calgary", @"Edmonton", @"Lethbridge", nil];
-	nbCities = [[NSMutableArray alloc] initWithObjects:@"Fredrichton", @"Moncton", @"Saint John", nil];
+	//get the dictionary from plist file
+	NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"provinceCitiesDictionary" ofType:@"plist"];
+	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+	self.i_provinceCities = dictionary;
+	[dictionary release];
 	
-	i_cityTextField.enabled = NO;
+	//sort keys alphabetically and populating the first picker view arrays
+	NSArray *sorted = [[self.i_provinceCities allKeys] sortedArrayUsingSelector:@selector (compare:)];
+	self.i_provinces = sorted;
+	[sorted release];
+	
+	NSString *selectedState = [self.i_provinces objectAtIndex:0];
+	NSArray *array = [i_provinceCities objectForKey:selectedState];
+	self.i_cities = array;
+	[array release];
+	
+	//You'd fetch individual values like this;
+	
+    //NSString *value1 = [[dictionary objectForKey:@"Ontario"] objectAtIndex:0];
+    //NSString *value2 = [[dictionary objectForKey:@"Ontario"] objectAtIndex:1];
+    // value1 is @"MyValue1", value2 is @"MyValue2";
+	
 }
 
 - (void) textFieldDidBeginEditing:(UITextField *)textField {
 	
-	
-	if (textField == i_provinceTextField) {
-		
-		i_provinceTextFieldSelected = TRUE;
-		
-		//prevent keyboard from launching
-		[textField resignFirstResponder];
-
-		//fill in province data
-		i_pickerData =  [provinceArray mutableCopy];
-		
-		i_cityTextField.enabled = YES;
-	}
-	else if (textField == i_cityTextField) {
-		
-		[textField resignFirstResponder];
-		
-		//province selection has completed
-		i_provinceTextFieldSelected = FALSE;
-		
-		if ([i_pickerData objectAtIndex:i_selectedRowInPicker]  == [provinceArray objectAtIndex:0]){
-			i_pickerData = [albertaCities mutableCopy];
-		} else if ([i_pickerData objectAtIndex:i_selectedRowInPicker] == [provinceArray objectAtIndex:1]) {
-			i_pickerData = [ontarioCities mutableCopy];
-		} else if ([i_pickerData objectAtIndex:i_selectedRowInPicker] == [provinceArray objectAtIndex:2]) {
-			i_pickerData = [nbCities mutableCopy];
-		}
-	}
+	//prevent keyboard from launching
+	[textField resignFirstResponder];
 	
 	[self showActionSheet];
-	
-	[i_pickerView selectRow:0 inComponent:0 animated:YES];
-	
-	
 }
 
 - (void) showActionSheet {
@@ -108,58 +94,51 @@
 - (BOOL) dismissActionSheet: (id)sender {
 
 	//filling in the province
-	if (i_provinceTextFieldSelected) {
-		if (i_selectedRowInPicker == 0) {
-			i_provinceTextField.text = [i_pickerData objectAtIndex:i_selectedRowInPicker];
-		}
-		else if (i_selectedRowInPicker == 1) {
-			i_provinceTextField.text = [i_pickerData objectAtIndex:i_selectedRowInPicker];
-		}
-		else if (i_selectedRowInPicker== 2) {
-			i_provinceTextField.text = [i_pickerData objectAtIndex:i_selectedRowInPicker];
-		}
-	}
-	//filling in the city
-	else if (!i_provinceTextFieldSelected) {
-		if (i_selectedRowInPicker == 0) {
-			i_cityTextField.text = [i_pickerData objectAtIndex:i_selectedRowInPicker];
-		}
-		else if (i_selectedRowInPicker == 1) {
-			i_cityTextField.text = [i_pickerData objectAtIndex:i_selectedRowInPicker];
-		}
-		else if (i_selectedRowInPicker == 2) {
-			i_cityTextField.text = [i_pickerData objectAtIndex:i_selectedRowInPicker];
-		}
-	}
-
 	
+	NSInteger provinceRow = [i_pickerView selectedRowInComponent:kProvinceComponent];
+	NSInteger cityRow = [i_pickerView selectedRowInComponent:kCityComponent];
+	
+	NSString *province = [self.i_provinces objectAtIndex:provinceRow];
+	NSString *city = [self.i_cities objectAtIndex:cityRow];
+	
+	i_provinceTextField.text = [[NSString alloc] initWithFormat:@"%@, %@", city, province];
 	[i_pickerSheet dismissWithClickedButtonIndex:0 animated:YES];
 	
-	[i_pickerView release];
-	[i_pickerSheet release];
 	
 	return YES;
 }
 
 - (NSInteger) numberOfComponentsInPickerView: (UIPickerView *)pickerView {
 	
-	return 1;
+	return 2;
 }
 
 - (NSInteger) pickerView: (UIPickerView *)picker numberOfRowsInComponent:(NSInteger)component {
 
-	return [i_pickerData count];
+	if (component == kProvinceComponent)
+		return [self.i_provinces count];
+	return [self.i_cities count];
 }
 
 - (NSString *) pickerView: (UIPickerView *)picker titleForRow:(NSInteger)row forComponent:(NSInteger)component {
 	
-	return [i_pickerData objectAtIndex:row];
+	if (component == kProvinceComponent)
+		return [self.i_provinces objectAtIndex:row];
+	return [self.i_cities objectAtIndex:row];
 }
 
 - (void) pickerView: (UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
-	//should be in DONE action method
-	i_selectedRowInPicker = row;
+	if (component == kProvinceComponent)
+	{
+		NSString *selectedProvince = [self.i_provinces objectAtIndex:row];
+		NSArray *array = [i_provinceCities objectForKey:selectedProvince];
+		self.i_cities = array;
+		[array release];
+		
+		[i_pickerView selectRow:0 inComponent:kCityComponent animated:YES];
+		[i_pickerView reloadComponent:kCityComponent];
+	}
 }
 
 - (IBAction)switchView {
@@ -187,6 +166,9 @@
 
 - (void)dealloc {
 	
+	[i_provinceCities release];
+	[i_pickerView release];
+	[i_pickerSheet release];
     [super dealloc];
 }
 

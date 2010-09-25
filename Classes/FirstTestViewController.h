@@ -8,18 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+#define kProvinceComponent 0
+#define kCityComponent 1
+
 @interface FirstTestViewController : UIViewController <UITextFieldDelegate, UIActionSheetDelegate, UIPickerViewDelegate, UIPickerViewDataSource>  {
 
-	UITextField *i_provinceTextField, *i_cityTextField;
+	NSDictionary *i_provinceCities;
+	NSArray *i_provinces, *i_cities;
 	UIActionSheet *i_pickerSheet;
-	UIToolbar *i_pickerBar;
-	UIPickerView *i_pickerView;	
-	NSInteger i_selectedRowInPicker;
-	BOOL i_provinceTextFieldSelected;
+	UIToolbar *i_pickerBar;	
+	
+	IBOutlet UITextField *i_provinceTextField;
+	UIPickerView *i_pickerView;
 
 }
-@property (nonatomic,retain) IBOutlet UITextField *i_provinceTextField, *i_cityTextField;
-@property (nonatomic,copy) NSMutableArray *provinceArray, *ontarioCities, *nbCities, *albertaCities, *i_pickerData;
+@property (nonatomic, retain) UITextField *i_provinceTextField;
+@property (nonatomic, retain) NSArray *i_provinces, *i_cities;
+@property (nonatomic, retain) NSDictionary *i_provinceCities;
 
 - (IBAction) switchView;
 - (BOOL) dismissActionSheet: (id)sender;
