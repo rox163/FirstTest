@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New Brunswick</key>
+	<array>
+		<string>Fredrichton</string>
+		<string>Moncton</string>
+		<string>Lethbridge</string>
+	</array>
+	<key>Alberta</key>
+	<array>
+		<string>Calgary</string>
+		<string>Edmonton</string>
+	</array>
+	<key>Ontario</key>
+	<array>
+		<string>Ajax</string>
+		<string>Aurora</string>
+		<string>Belleville</string>
+		<string>Ottawa</string>
+	</array>
+</dict>
+</plist>
