@@ -104,9 +104,9 @@
 	NSInteger cityRow = [i_pickerView selectedRowInComponent:kCityComponent];
 	
 	NSString *province = [self.i_provinces objectAtIndex:provinceRow];
-	NSString *city = [self.i_cities objectAtIndex:cityRow];
+	i_selectedCity = [self.i_cities objectAtIndex:cityRow];
 	
-	i_provinceTextField.text = [[NSString alloc] initWithFormat:@"%@, %@", city, province];
+	i_provinceTextField.text = [[NSString alloc] initWithFormat:@"%@, %@", i_selectedCity, province];
 	[i_pickerSheet dismissWithClickedButtonIndex:0 animated:YES];
 	
 	
@@ -134,8 +134,7 @@
 
 - (void) pickerView: (UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
-	if (component == kProvinceComponent)
-	{
+	if (component == kProvinceComponent) {
 		NSString *selectedProvince = [i_provinces objectAtIndex:row];
 		self.i_cities = [i_provinceCities objectForKey:selectedProvince];
 		
@@ -144,14 +143,16 @@
 	}
 }
 
-- (IBAction)switchView {
-	ResultsView *rView = [[ResultsView alloc] initWithCity:@"TestCity"];
-	[self presentModalViewController:rView animated:YES];
+- (IBAction) switchView {
+	
+	if (i_selectedCity != nil) {
+		ResultsView *rView = [[ResultsView alloc] initWithCity:i_selectedCity];
+		[self presentModalViewController:rView animated:YES];
+	}	
 }
 
-
-
 - (void)didReceiveMemoryWarning {
+	
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 	

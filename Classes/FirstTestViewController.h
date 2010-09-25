@@ -18,9 +18,11 @@ UIPickerViewDataSource>  {
 	NSArray *i_provinces, *i_cities;
 	UIActionSheet *i_pickerSheet;
 	UIToolbar *i_pickerBar;	
+	NSString *i_selectedCity;
+	UIPickerView *i_pickerView;
 	
 	IBOutlet UITextField *i_provinceTextField;
-	UIPickerView *i_pickerView;
+
 
 }
 @property (nonatomic, retain) UITextField *i_provinceTextField;

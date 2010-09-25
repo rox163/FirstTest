@@ -12,7 +12,16 @@
 @implementation ResultsView
 @synthesize i_city;
 
-- (ResultsView*) initWithCity: (NSString *) city {
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	
+	
+}
+
+- (ResultsView *) initWithCity: (NSString *) city {
 	self.i_city = city;
 	NSLog(@"%@", i_city);
 	return self;
@@ -25,13 +34,6 @@
 	[self presentModalViewController:firstView animated:YES];
 	
 }
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.

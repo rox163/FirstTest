@@ -18,7 +18,7 @@
 
 @property (retain) NSString *i_city;
 
-- (ResultsView*) initWithCity: (NSString *) city; 
+- (ResultsView *) initWithCity: (NSString *) city; 
 - (IBAction)goBack;
 
 @end
