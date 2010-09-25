@@ -1,325 +1,0 @@
-TFirstTest
-v7
-r0
-t306961848.068486
-cCheck dependencies
-cProcessInfoPlistFile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/Info.plist FirstTest-Info.plist
-cCompileXIB /Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib
-cCompileXIB /Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTestViewController.xib
-cCpResource build/Release-iphonesimulator/FirstTest.app/icon.png ../../../Desktop/icon.png
-cCompileXIB /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.xib
-cProcessPCH /var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch.gch FirstTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/main.o /Users/iExplode/Documents/IphoneProjects/FirstTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestAppDelegate.o /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestViewController.o /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/ResultsView.o /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest normal i386
-cGenerateDSYMFile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app.dSYM /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest
-cTouch /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app
-
-N/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
-c000000004C79B5570000000000000132
-t1283044695
-s306
-
-N/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004BFDFE39000000000027C7D0
-t1274936889
-s2607056
-
-N/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004BFDFE7C000000000029D5D0
-t1274936956
-s2741712
-
-N/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004BFDFE6E0000000000001466
-t1274936942
-s5222
-
-N/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C0470BB00000000000009CD
-t1275359419
-s2509
-
-N/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C0471620000000001D47210
-t1275359586
-s30700048
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/../../../Desktop/icon.png
-c000000004C903D3D000000000000052B
-t1284521277
-s1323
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.h
-c000000004C919AD100000000000001F1
-t1284610769
-s497
-i<UIKit/UIKit.h>
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m
-c000000004C903BEA0000000000000A9A
-t1284520938
-s2714
-i"FirstTestAppDelegate.h"
-i"FirstTestViewController.h"
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.h
-c000000004C9BA6050000000000000319
-t1285268997
-s793
-i<UIKit/UIKit.h>
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m
-c000000004C9BA5EA000000000000143C
-t1285268970
-s5180
-i"FirstTestViewController.h"
-i"ResultsView.h"
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.h
-c000000004C969F620000000000000153
-t1284939618
-s339
-i<UIKit/UIKit.h>
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m
-c000000004C92D93500000000000004F1
-t1284692277
-s1265
-i"ResultsView.h"
-i"FirstTestViewController.h"
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.xib
-c000000004C99057E0000000000005F9E
-t1285096830
-s24478
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTestViewController.xib
-c000000004C9A70F70000000000006767
-t1285189879
-s26471
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTest_Prefix.pch
-c000000004C903BEB00000000000000BB
-t1284520939
-s187
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib
-c000000004C903BEB0000000000004E41
-t1284520939
-s20033
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTest.LinkFileList
-c000000004C9BA635000000000000025A
-t1285269045
-s602
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestAppDelegate.o
-t1285269047
-s51372
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestViewController.o
-t1285269048
-s64548
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/ResultsView.o
-t1285269047
-s44556
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/main.o
-t1285269047
-s6364
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app
-t1285269048
-s306
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app.dSYM
-t1285269048
-s102
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest
-t1285269048
-s27780
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTestViewController.nib
-t1285269046
-s2421
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/Info.plist
-t1285269045
-s620
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/MainWindow.nib
-t1285269046
-s1127
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/PkgInfo
-t1285269045
-s8
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/ResultsView.nib
-t1285269046
-s1550
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/icon.png
-t1285269046
-s1323
-
-N/Users/iExplode/Documents/IphoneProjects/FirstTest/main.m
-c000000004C903BEB0000000000000170
-t1284520939
-s368
-i<UIKit/UIKit.h>
-
-N/var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch.gch
-t1285269047
-s14904336
-
-NFirstTest-Info.plist
-c000000004C92D4900000000000000372
-t1284691088
-s882
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies306961845#306961845#0(0"0(0#1#0"8699388000#0"0#
-
-CCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestAppDelegate.o /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s306961847.564323
-e306961847.787538
-r1
-xCompileC
-xbuild/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestAppDelegate.o
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m306961847#306961847#0(0"0(0#0#81"/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m8612304192#2224"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-generated-files.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-own-target-headers.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-all-target-headers.hmap -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-project-headers.hmap -F/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/include -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources/i386 -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch -c /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestAppDelegate.m -o /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestAppDelegate.o0#
-
-CCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestViewController.o /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s306961847.659259
-e306961848.013971
-r1
-xCompileC
-xbuild/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestViewController.o
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@92"Compile /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m306961847#306961848#0(0"0(0#0#84"/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m8625946784#2230"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-generated-files.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-own-target-headers.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-all-target-headers.hmap -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-project-headers.hmap -F/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/include -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources/i386 -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch -c /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/FirstTestViewController.m -o /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTestViewController.o0#
-
-CCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/ResultsView.o /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s306961847.787643
-e306961847.886885
-r1
-xCompileC
-xbuild/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/ResultsView.o
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m306961847#306961847#0(0"0(0#0#72"/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m8713427008#2206"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-generated-files.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-own-target-headers.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-all-target-headers.hmap -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-project-headers.hmap -F/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/include -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources/i386 -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch -c /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.m -o /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/ResultsView.o0#
-
-CCompileC build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/main.o /Users/iExplode/Documents/IphoneProjects/FirstTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s306961847.562753
-e306961847.659145
-r1
-xCompileC
-xbuild/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/main.o
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/iExplode/Documents/IphoneProjects/FirstTest/main.m306961847#306961847#0(0"0(0#0#57"/Users/iExplode/Documents/IphoneProjects/FirstTest/main.m8699760512#2184"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-generated-files.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-own-target-headers.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-all-target-headers.hmap -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-project-headers.hmap -F/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/include -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources/i386 -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch -c /Users/iExplode/Documents/IphoneProjects/FirstTest/main.m -o /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.xib
-s306961846.371164
-e306961846.819707
-r1
-xCompileXIB
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.xib
-lSLF07#2@34"CompileXIB Classes/ResultsView.xib306961846#306961846#0(0"0(0#0#74"/Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.xib8680888416#672"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/ResultsView.nib /Users/iExplode/Documents/IphoneProjects/FirstTest/Classes/ResultsView.xib --sdk /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
-
-CCompileXIB /Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTestViewController.xib
-s306961845.908032
-e306961846.512376
-r1
-xCompileXIB
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTestViewController.xib
-lSLF07#2@38"CompileXIB FirstTestViewController.xib306961845#306961846#0(0"0(0#0#78"/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTestViewController.xib8627667136#688"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTestViewController.nib /Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTestViewController.xib --sdk /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
-
-CCompileXIB /Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib
-s306961845.907269
-e306961846.369969
-r1
-xCompileXIB
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib306961845#306961846#0(0"0(0#0#65"/Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib8638131968#662"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/MainWindow.nib /Users/iExplode/Documents/IphoneProjects/FirstTest/MainWindow.xib --sdk /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
-
-CCpResource build/Release-iphonesimulator/FirstTest.app/icon.png ../../../Desktop/icon.png
-s306961846.370065
-e306961846.379628
-r1
-xCpResource
-xbuild/Release-iphonesimulator/FirstTest.app/icon.png
-x../../../Desktop/icon.png
-lSLF07#2@30"Copy ../../../Desktop/icon.png306961846#306961846#0(0"0(0#0#76"/Users/iExplode/Documents/IphoneProjects/FirstTest/../../../Desktop/icon.png8683610816#569"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/iExplode/Documents/IphoneProjects/FirstTest/../../../Desktop/icon.png /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app0#
-
-CGenerateDSYMFile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app.dSYM /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest
-s306961848.043950
-e306961848.065278
-r1
-xGenerateDSYMFile
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app.dSYM
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest
-lSLF07#2@119"GenerateDSYMFile build/Release-iphonesimulator/FirstTest.app.dSYM build/Release-iphonesimulator/FirstTest.app/FirstTest306961848#306961848#0(0"0(0#0#104"/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest8625931328#468"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/usr/bin/dsymutil /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest -o /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app.dSYM0#
-
-CLd /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest normal i386
-s306961848.014100
-e306961848.043834
-r1
-xLd
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest
-xnormal
-xi386
-lSLF07#2@109"Link /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest306961848#306961848#0(0"0(0#0#0"8713381376#1030"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator -F/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator -filelist /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/Objects-normal/i386/FirstTest.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/FirstTest0#
-
-CProcessInfoPlistFile /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/Info.plist FirstTest-Info.plist
-s306961845.902701
-e306961845.907165
-r1
-xProcessInfoPlistFile
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/Info.plist
-xFirstTest-Info.plist
-lSLF07#2@28"Process FirstTest-Info.plist306961845#306961845#0(0"0(0#0#71"/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTest-Info.plist8670736992#551"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility FirstTest-Info.plist -genpkginfo /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app/Info.plist0#
-
-CProcessPCH /var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch.gch FirstTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s306961846.819850
-e306961847.562495
-r1
-xProcessPCH
-x/var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch.gch
-xFirstTest_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile FirstTest_Prefix.pch306961846#306961847#0(0"0(0#0#71"/Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTest_Prefix.pch8703652128#2060"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-generated-files.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-own-target-headers.hmap -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-all-target-headers.hmap -iquote /Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/FirstTest-project-headers.hmap -F/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/include -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources/i386 -I/Users/iExplode/Documents/IphoneProjects/FirstTest/build/FirstTest.build/Release-iphonesimulator/FirstTest.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/iExplode/Documents/IphoneProjects/FirstTest/FirstTest_Prefix.pch -o /var/folders/1M/1ME+BoUBFTqx6vRZGobTvk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FirstTest_Prefix-bpfijpivmnsrmpguefuinwviigoq/FirstTest_Prefix.pch.gch0#
-
-CTouch /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app
-s306961848.065375
-e306961848.068447
-r1
-xTouch
-x/Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app
-lSLF07#2@100"Touch /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app306961848#306961848#0(0"0(0#0#0"8627609504#332"    cd /Users/iExplode/Documents/IphoneProjects/FirstTest    setenv PATH "/Applications/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/iExplode/Documents/IphoneProjects/FirstTest/build/Release-iphonesimulator/FirstTest.app0#
-
