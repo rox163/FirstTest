@@ -19,6 +19,7 @@
 	//get the dictionary from plist file
 	NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"provinceCitiesDictionary" ofType:@"plist"];
 	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+	NSLog(@"%@",plistPath);
 	self.i_provinceCities = dictionary;
 	[dictionary release];
 	
@@ -113,14 +114,14 @@
 	return 2;
 }
 
-- (NSInteger) pickerView: (UIPickerView *)picker numberOfRowsInComponent:(NSInteger)component {
+- (NSInteger) pickerView: (UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
 
 	if (component == kProvinceComponent)
 		return [self.i_provinces count];
 	return [self.i_cities count];
 }
 
-- (NSString *) pickerView: (UIPickerView *)picker titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (NSString *) pickerView: (UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
 	
 	if (component == kProvinceComponent)
 		return [self.i_provinces objectAtIndex:row];

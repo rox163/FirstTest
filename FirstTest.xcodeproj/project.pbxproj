@@ -13,7 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		1F01B0551241D17B00EB8EDC /* ResultsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F01B0531241D17B00EB8EDC /* ResultsView.m */; };
 		1F01B0561241D17B00EB8EDC /* ResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F01B0541241D17B00EB8EDC /* ResultsView.xib */; };
-		1F489F6F124075530017029B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F489F6E124075530017029B /* icon.png */; };
+		1F07CD4C124DAD6500312076 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F07CD4B124DAD6500312076 /* icon.png */; };
 		1F990CE0124D3D5400126482 /* provinceCitiesDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F990CDF124D3D5400126482 /* provinceCitiesDictionary.plist */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* FirstTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* FirstTestViewController.xib */; };
@@ -30,7 +30,7 @@
 		1F01B0521241D17B00EB8EDC /* ResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsView.h; sourceTree = "<group>"; };
 		1F01B0531241D17B00EB8EDC /* ResultsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsView.m; sourceTree = "<group>"; };
 		1F01B0541241D17B00EB8EDC /* ResultsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ResultsView.xib; path = Classes/ResultsView.xib; sourceTree = "<group>"; };
-		1F489F6E124075530017029B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../Desktop/icon.png; sourceTree = SOURCE_ROOT; };
+		1F07CD4B124DAD6500312076 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Icon/icon.png; sourceTree = "<group>"; };
 		1F990CDF124D3D5400126482 /* provinceCitiesDictionary.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; name = provinceCitiesDictionary.plist; path = ../../../../../../../Users/iExplode/Documents/IphoneProjects/FirstTest/provinceCitiesDictionary.plist; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* FirstTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTestViewController.xib; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F07CD4B124DAD6500312076 /* icon.png */,
 				1F990CDF124D3D5400126482 /* provinceCitiesDictionary.plist */,
 				1F01B0541241D17B00EB8EDC /* ResultsView.xib */,
-				1F489F6E124075530017029B /* icon.png */,
 				2899E5210DE3E06400AC0155 /* FirstTestViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* FirstTest-Info.plist */,
@@ -165,9 +165,9 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* FirstTestViewController.xib in Resources */,
-				1F489F6F124075530017029B /* icon.png in Resources */,
 				1F01B0561241D17B00EB8EDC /* ResultsView.xib in Resources */,
 				1F990CE0124D3D5400126482 /* provinceCitiesDictionary.plist in Resources */,
+				1F07CD4C124DAD6500312076 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
