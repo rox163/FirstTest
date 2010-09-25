@@ -20,7 +20,7 @@
 	NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"provinceCitiesDictionary" ofType:@"plist"];
 	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
 	self.i_provinceCities = dictionary;
-	//[dictionary release];
+	[dictionary release];
 
 	//sort keys alphabetically and populating the first picker view arrays
 	NSArray *sorted = [[self.i_provinceCities allKeys] sortedArrayUsingSelector:@selector (compare:)];
