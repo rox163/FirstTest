@@ -13,7 +13,7 @@
 
 @interface FirstTestViewController : UIViewController <UITextFieldDelegate, UIActionSheetDelegate, UIPickerViewDelegate, UIPickerViewDataSource>  {
 
-	NSMutableDictionary *i_provinceCities;
+	NSDictionary *i_provinceCities;
 	NSArray *i_provinces, *i_cities;
 	UIActionSheet *i_pickerSheet;
 	UIToolbar *i_pickerBar;	

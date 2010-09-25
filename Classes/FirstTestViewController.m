@@ -19,19 +19,18 @@
 	//get the dictionary from plist file
 	NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"provinceCitiesDictionary" ofType:@"plist"];
 	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
-	NSLog(@"%@",plistPath);
 	self.i_provinceCities = dictionary;
-	[dictionary release];
-	
+	//[dictionary release];
+
 	//sort keys alphabetically and populating the first picker view arrays
 	NSArray *sorted = [[self.i_provinceCities allKeys] sortedArrayUsingSelector:@selector (compare:)];
 	self.i_provinces = sorted;
-	[sorted release];
-	
-	NSString *selectedState = [self.i_provinces objectAtIndex:0];
-	NSArray *array = [i_provinceCities objectForKey:selectedState];
+
+
+	NSString *selectedProvince = [self.i_provinces objectAtIndex:0];
+	NSArray *array = [i_provinceCities objectForKey:selectedProvince];
 	self.i_cities = array;
-	[array release];
+
 	
 	//You'd fetch individual values like this;
 	
@@ -132,10 +131,8 @@
 
 	if (component == kProvinceComponent)
 	{
-		NSString *selectedProvince = [self.i_provinces objectAtIndex:row];
-		NSArray *array = [i_provinceCities objectForKey:selectedProvince];
-		self.i_cities = array;
-		[array release];
+		NSString *selectedProvince = [i_provinces objectAtIndex:row];
+		self.i_cities = [i_provinceCities objectForKey:selectedProvince];
 		
 		[i_pickerView selectRow:0 inComponent:kCityComponent animated:YES];
 		[i_pickerView reloadComponent:kCityComponent];
