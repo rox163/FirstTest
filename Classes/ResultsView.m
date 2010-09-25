@@ -10,7 +10,14 @@
 #import "FirstTestViewController.h"
 
 @implementation ResultsView
+@synthesize i_city;
 
+- (ResultsView*) initWithCity: (NSString *) city {
+	self.i_city = city;
+	NSLog(@"%@", i_city);
+	return self;
+}
+	
 
 - (IBAction)goBack {
 	

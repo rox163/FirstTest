@@ -13,8 +13,12 @@
 
 	IBOutlet UIScrollView *scrollView;
 	IBOutlet UITableView *tableView;
+	NSString *i_ciy;
 }
 
+@property (retain) NSString *i_city;
+
+- (ResultsView*) initWithCity: (NSString *) city; 
 - (IBAction)goBack;
 
 @end

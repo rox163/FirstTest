@@ -145,8 +145,7 @@
 }
 
 - (IBAction)switchView {
-	
-	ResultsView *rView = [[ResultsView alloc] initWithNibName:nil bundle:nil];
+	ResultsView *rView = [[ResultsView alloc] initWithCity:@"TestCity"];
 	[self presentModalViewController:rView animated:YES];
 }
 
