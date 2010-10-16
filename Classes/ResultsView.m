@@ -7,41 +7,24 @@
 //
 
 #import "ResultsView.h"
-#import "FirstTestViewController.h"
+#import "SearchOptions.h"
 
 @implementation ResultsView
-@synthesize i_city;
+@synthesize  i_selectedOption;
 
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	NSLog(@"%@", i_selectedOption);
+	l_selectedOption.text = i_selectedOption;
 	
 }
-
-- (ResultsView *) initWithCity: (NSString *) city {
-	self.i_city = city;
-	NSLog(@"%@", i_city);
-	return self;
-}
-	
 
 - (IBAction)goBack {
 	
-	FirstTestViewController *firstView = [[FirstTestViewController alloc] initWithNibName:nil bundle:nil];
-	[self presentModalViewController:firstView animated:YES];
-	
+	SearchOptions *searchOptions = [[SearchOptions alloc] initWithNibName:nil bundle:nil];
+	[self presentModalViewController:searchOptions animated:YES];
 }
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -56,7 +39,6 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
 
 - (void)dealloc {
     [super dealloc];

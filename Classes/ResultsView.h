@@ -9,16 +9,19 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ResultsView : UIViewController <UIScrollViewDelegate> {
+@interface ResultsView : UIViewController {
 
-	IBOutlet UIScrollView *scrollView;
-	IBOutlet UITableView *tableView;
-	NSString *i_ciy;
+	
+	IBOutlet UILabel *l_selectedOption;
+	//IBOutlet UIScrollView *i_scrollView;
+	
+	NSString *i_selectedOption;
+	
 }
 
-@property (retain) NSString *i_city;
+//@property (nonatomic, retain) UIScrollView *i_scrollView;
+@property (nonatomic, retain) NSString *i_selectedOption;
 
-- (ResultsView *) initWithCity: (NSString *) city; 
 - (IBAction)goBack;
 
 @end

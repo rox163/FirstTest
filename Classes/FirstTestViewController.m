@@ -7,7 +7,7 @@
 //
 
 #import "FirstTestViewController.h"
-#import "ResultsView.h"
+#import "SearchOptions.h"
 
 @implementation FirstTestViewController
 @synthesize i_provinceTextField, i_provinceCities, i_cities, i_provinces;
@@ -40,7 +40,7 @@
 	
 }
 
-- (void) textFieldDidBeginEditing:(UITextField *)textField {
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
 	
 	//prevent keyboard from launching
 	[textField resignFirstResponder];
@@ -48,7 +48,7 @@
 	[self showActionSheet];
 }
 
-- (void) showActionSheet {
+- (void)showActionSheet {
 	
 	i_pickerSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil
 								  destructiveButtonTitle:nil otherButtonTitles: nil];
@@ -96,7 +96,7 @@
 	[UIView commitAnimations];
 }
 
-- (BOOL) dismissActionSheet: (id)sender {
+- (BOOL)dismissActionSheet: (id)sender {
 
 	//filling in the province
 	
@@ -113,26 +113,26 @@
 	return YES;
 }
 
-- (NSInteger) numberOfComponentsInPickerView: (UIPickerView *)pickerView {
+- (NSInteger)numberOfComponentsInPickerView: (UIPickerView *)pickerView {
 	
 	return 2;
 }
 
-- (NSInteger) pickerView: (UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+- (NSInteger)pickerView: (UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
 
 	if (component == kProvinceComponent)
 		return [self.i_provinces count];
 	return [self.i_cities count];
 }
 
-- (NSString *) pickerView: (UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (NSString *)pickerView: (UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
 	
 	if (component == kProvinceComponent)
 		return [self.i_provinces objectAtIndex:row];
 	return [self.i_cities objectAtIndex:row];
 }
 
-- (void) pickerView: (UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+- (void)pickerView: (UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
 	if (component == kProvinceComponent) {
 		NSString *selectedProvince = [i_provinces objectAtIndex:row];
@@ -143,11 +143,11 @@
 	}
 }
 
-- (IBAction) switchView {
+- (IBAction)switchView {
 	
 	if (i_selectedCity != nil) {
-		ResultsView *rView = [[ResultsView alloc] initWithCity:i_selectedCity];
-		[self presentModalViewController:rView animated:YES];
+		SearchOptions *searchOptionsView = [[SearchOptions alloc] initWithNibName:nil bundle:nil city:i_selectedCity];
+		[self presentModalViewController:searchOptionsView animated:YES];
 	}	
 }
 
