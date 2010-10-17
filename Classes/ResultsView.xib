@@ -66,7 +66,7 @@
 					<object class="IBUILabel" id="61130812">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{133, 131}, {82, 42}}</string>
+						<string key="NSFrame">{{48, 131}, {167, 42}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -85,8 +85,8 @@
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 						<float key="IBUIMinimumFontSize">18</float>
+						<int key="IBUILineBreakMode">0</int>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 416}</string>
@@ -124,11 +124,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">l_selectedOption</string>
+						<string key="label">label_option</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="61130812"/>
 					</object>
-					<int key="connectionID">24</int>
+					<int key="connectionID">25</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -232,7 +232,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">24</int>
+			<int key="maxID">25</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -252,13 +252,13 @@
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">l_selectedOption</string>
+						<string key="NS.key.0">label_option</string>
 						<string key="NS.object.0">UILabel</string>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">l_selectedOption</string>
+						<string key="NS.key.0">label_option</string>
 						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">l_selectedOption</string>
+							<string key="name">label_option</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
 					</object>

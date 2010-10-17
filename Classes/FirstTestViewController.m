@@ -26,14 +26,11 @@
 	NSArray *sorted = [[self.i_provinceCities allKeys] sortedArrayUsingSelector:@selector (compare:)];
 	self.i_provinces = sorted;
 
-
 	NSString *selectedProvince = [self.i_provinces objectAtIndex:0];
 	NSArray *array = [i_provinceCities objectForKey:selectedProvince];
 	self.i_cities = array;
-
 	
 	//You'd fetch individual values like this;
-	
     //NSString *value1 = [[dictionary objectForKey:@"Ontario"] objectAtIndex:0];
     //NSString *value2 = [[dictionary objectForKey:@"Ontario"] objectAtIndex:1];
     // value1 is @"MyValue1", value2 is @"MyValue2";
@@ -99,7 +96,6 @@
 - (BOOL)dismissActionSheet: (id)sender {
 
 	//filling in the province
-	
 	NSInteger provinceRow = [i_pickerView selectedRowInComponent:kProvinceComponent];
 	NSInteger cityRow = [i_pickerView selectedRowInComponent:kCityComponent];
 	
@@ -108,7 +104,6 @@
 	
 	i_provinceTextField.text = [[NSString alloc] initWithFormat:@"%@, %@", i_selectedCity, province];
 	[i_pickerSheet dismissWithClickedButtonIndex:0 animated:YES];
-	
 	
 	return YES;
 }
@@ -155,7 +150,6 @@
 	
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-	
 	// Release any cached data, images, etc that aren't in use.
 }
 
@@ -165,7 +159,6 @@
 	
 	[super viewDidUnload];
 }
-
 
 - (void)dealloc {
 	

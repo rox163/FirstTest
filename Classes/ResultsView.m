@@ -10,20 +10,20 @@
 #import "SearchOptions.h"
 
 @implementation ResultsView
-@synthesize  i_selectedOption;
+@synthesize  i_selectedOption, label_option;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
 	NSLog(@"%@", i_selectedOption);
-	l_selectedOption.text = i_selectedOption;
+	label_option.text = i_selectedOption;
 	
 }
 
 - (IBAction)goBack {
 	
-	SearchOptions *searchOptions = [[SearchOptions alloc] initWithNibName:nil bundle:nil];
-	[self presentModalViewController:searchOptions animated:YES];
+	SearchOptions *searchOptionsController = [[SearchOptions alloc] initWithNibName:nil bundle:nil];
+	[self presentModalViewController:searchOptionsController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

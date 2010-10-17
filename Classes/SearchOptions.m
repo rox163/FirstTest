@@ -11,10 +11,11 @@
 #import "ResultsView.h"
 
 @implementation SearchOptions
-@synthesize i_city, i_tableView;
+@synthesize i_city, i_tableView, resultsViewController;
 
 
 - (SearchOptions *)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil city: (NSString *) city {
+	
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		self.i_city = city;
 		NSLog(@"%@", i_city);
@@ -32,14 +33,13 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    
+	[super viewDidLoad];
 	
 	listOfItems = [[NSMutableArray alloc] init];
 	//Add items
 	[listOfItems addObject:@"Search by Club"];
 	[listOfItems addObject:@"Search by GroupEX class"];
-	
-	
 	//[i_tableView setFrame:CGRectMake(0, 0, 320, 500)];
 }
 
@@ -47,35 +47,41 @@
 	return [listOfItems count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCellAccessoryType)tableView:(UITableView *)tv accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath {
+	
+	return UITableViewCellAccessoryDetailDisclosureButton;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)table cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	static NSString *CellIdentifier = @"Cell";
 	
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	UITableViewCell *cell = [table dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
 	// Set up the cell...
 	NSString *cellText = [listOfItems objectAtIndex:indexPath.row];
-	cell.text = cellText;
+	[cell setText: cellText];
 	
 	return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)table didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
 	NSString *selectedOption = [listOfItems objectAtIndex:indexPath.row];
-	
-	
-	ResultsView *resultsView = [[ResultsView alloc] initWithNibName:@"ResultsView" bundle:[NSBundle mainBundle]];
-	[self.navigationController pushViewController:resultsView animated:YES];
-	
 	NSLog(@"%@ from SearchOptions class", selectedOption);
-	resultsView.i_selectedOption = selectedOption;
 	
-	//[resultsView release];
-	//resultsView = nil;
+	if(resultsViewController == nil)
+		self.resultsViewController = [[ResultsView alloc] initWithNibName:@"ResultsView" bundle:[NSBundle mainBundle]];
+	
+	//Passing the selected option
+	resultsViewController.i_selectedOption = selectedOption;
+	
+	//Add the view as a sub view to the current view.
+	[self.view addSubview:[resultsViewController view]];
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,10 +97,10 @@
     // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
 	
 	[listOfItems release];	
+	[resultsViewController release];
     [super dealloc];
 }
 
