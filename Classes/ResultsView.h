@@ -10,16 +10,18 @@
 
 @interface ResultsView : UIViewController {
 
-	IBOutlet UILabel *label_option;
-	//IBOutlet UIScrollView *i_scrollView;
-	
+	NSDictionary *i_clubData;
 	NSString *i_selectedOption;
+	NSString *i_selectedCity;
+	NSMutableArray *i_clubList;
+	IBOutlet UITableView *tableView;
 	
 }
 
-//@property (nonatomic, retain) UIScrollView *i_scrollView;
-@property (nonatomic, retain) UILabel *label_option;
-@property (nonatomic, retain) NSString *i_selectedOption;
+@property (nonatomic, retain) NSMutableArray *i_clubList;
+@property (nonatomic, retain) NSString *i_selectedOption, *i_selectedCity;
+@property (nonatomic, retain) NSDictionary *i_clubData;
+@property (nonatomic, retain) UITableView *tableView;
 - (IBAction)goBack;
 
 @end

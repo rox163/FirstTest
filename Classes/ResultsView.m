@@ -10,14 +10,40 @@
 #import "SearchOptions.h"
 
 @implementation ResultsView
-@synthesize  i_selectedOption, label_option;
+@synthesize  i_selectedOption, i_selectedCity, i_clubData, i_clubList,tableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	NSLog(@"%@", i_selectedOption);
-	label_option.text = i_selectedOption;
+/*	//get the dictionary from plist file
+	NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"searchResults" ofType:@"plist"];
+	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+	self.i_clubData = dictionary;
+	[dictionary release];
+*/	
+	 NSLog(@"%@", i_selectedCity);
+	i_clubList = [[NSMutableArray alloc] initWithObjects:@"Rideau",nil];
 	
+}
+
+- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
+	return [i_clubList count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)table cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *CellIdentifier = @"Cell";
+	
+	UITableViewCell *cell = [table dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil) {
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+	}
+	
+	// Set up the cell...
+	NSString *cellText = [i_clubList objectAtIndex:indexPath.row];
+	[cell.textLabel setText: cellText];
+	
+	return cell;
 }
 
 - (IBAction)goBack {
@@ -36,11 +62,11 @@
 - (void)viewDidUnload {
 	
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)dealloc {
+	
+	[i_clubList release];
     [super dealloc];
 }
 

@@ -47,11 +47,6 @@
 	return [listOfItems count];
 }
 
-- (UITableViewCellAccessoryType)tableView:(UITableView *)tv accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath {
-	
-	return UITableViewCellAccessoryDetailDisclosureButton;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)table cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	static NSString *CellIdentifier = @"Cell";
@@ -63,7 +58,8 @@
 	
 	// Set up the cell...
 	NSString *cellText = [listOfItems objectAtIndex:indexPath.row];
-	[cell setText: cellText];
+	[cell.textLabel setText: cellText];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator ;
 	
 	return cell;
 }
@@ -78,6 +74,7 @@
 	
 	//Passing the selected option
 	resultsViewController.i_selectedOption = selectedOption;
+	resultsViewController.i_selectedCity = i_city;
 	
 	//Add the view as a sub view to the current view.
 	[self.view addSubview:[resultsViewController view]];
