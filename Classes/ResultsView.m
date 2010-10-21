@@ -15,14 +15,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-/*	//get the dictionary from plist file
+	//get the dictionary from plist file
 	NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"searchResults" ofType:@"plist"];
 	NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
 	self.i_clubData = dictionary;
 	[dictionary release];
-*/	
-	 NSLog(@"%@", i_selectedCity);
-	i_clubList = [[NSMutableArray alloc] initWithObjects:@"Rideau",nil];
+	
+	NSLog(@"%@", i_selectedCity);
+	
+	NSArray *array = [i_clubData objectForKey:i_selectedCity];
+	self.i_clubList = array;
 	
 }
 
@@ -40,7 +42,7 @@
 	}
 	
 	// Set up the cell...
-	NSString *cellText = [i_clubList objectAtIndex:indexPath.row];
+	NSString *cellText = [NSString stringWithFormat:@"%@", [i_clubList objectAtIndex:indexPath.row]];
 	[cell.textLabel setText: cellText];
 	
 	return cell;
