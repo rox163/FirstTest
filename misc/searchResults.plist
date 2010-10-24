@@ -2,13 +2,64 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Edmonton</key>
+	<key>Calgary</key>
+	<array>
+		<string>Beacon Hill 24 Hour</string>
+		<string>Canyon Meadows</string>
+		<string>Country Village Real Canadian Superstore</string>
+		<string>Deerfoot Meadows Real Canadian Superstore</string>
+		<string>Huntington Hills Superstore</string>
+		<string>McKenzie Towne Centre</string>
+		<string>Richmond Square</string>
+		<string>Westwinds Real Canadian Superstore</string>
+	</array>
+	<key>Victoria</key>
 	<array/>
+	<key>Edmonton</key>
+	<array>
+		<string>South Park 24-Hour</string>
+	</array>
 	<key>Ottawa</key>
 	<array>
-		<string>Bayshore</string>
-		<string>Rideau</string>
+		<string>Barrhaven Loblaws</string>
+		<string>Baseline/Woodroffe Loblaws</string>
+		<string>Bridlewood Real Canadian Superstore</string>
+		<string>Gloucester Centre Loblaws</string>
+		<string>Hazeldean Road,</string>
+		<string>Hunt Club</string>
+		<string>March/Terry Fox</string>
+		<string>Orleans Tenth Line</string>
+		<string>Place D&apos;Orleans</string>
+		<string>Queen Street</string>
 		<string>Queensview</string>
+		<string>Rideau Centre</string>
+		<string>River Road Your Independent Grocery</string>
+		<string>South Orleans Real Canadian Superstore</string>
+		<string>Strandherd Crossing 24 Hour</string>
+		<string>Vanier Market Loblaws</string>
+		<string>Walkley</string>
+	</array>
+	<key>Toronto</key>
+	<array>
+		<string>Bloor Park</string>
+		<string>Coxwell/Gerrard</string>
+		<string>Dufferin</string>
+		<string>Eaton Centre North</string>
+		<string>Eaton Centre South</string>
+		<string>King/Liberty</string>
+		<string>Manulife Centre</string>
+		<string>McCaul/Queen St. West</string>
+		<string>Mount Pleasant/Davisville</string>
+		<string>Plaza</string>
+		<string>St. Clair/Yonge</string>
+		<string>Toronto Street</string>
+		<string>Union Station</string>
+		<string>Weston/401 Real Canadian Superstore</string>
+	</array>
+	<key>Ajax</key>
+	<array>
+		<string>Harwood Plaza 24 Hour</string>
+		<string>Kingston/Harwood Real Canadian Superstore</string>
 	</array>
 </dict>
 </plist>

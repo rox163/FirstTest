@@ -26,8 +26,8 @@
 
 - (IBAction)goBack {
 	
-	FirstTestViewController *firstView = [[FirstTestViewController alloc] initWithNibName:nil bundle:nil];
-	[self presentModalViewController:firstView animated:YES];
+	FirstTestViewController *firstViewController = [[FirstTestViewController alloc] initWithNibName:nil bundle:nil];
+	[self presentModalViewController:firstViewController animated:YES];
 	
 }
 
@@ -40,7 +40,6 @@
 	//Add items
 	[listOfItems addObject:@"Search by Club"];
 	[listOfItems addObject:@"Search by GroupEX class"];
-	//[i_tableView setFrame:CGRectMake(0, 0, 320, 500)];
 }
 
 - (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
@@ -90,6 +89,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+	self.i_tableView = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

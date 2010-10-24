@@ -9,8 +9,10 @@
 #import "ResultsView.h"
 #import "SearchOptions.h"
 
+#import "CustomCell.h"
+
 @implementation ResultsView
-@synthesize  i_selectedOption, i_selectedCity, i_clubData, i_clubList,tableView;
+@synthesize  i_selectedOption, i_selectedCity, i_clubData, i_clubList,i_tableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +25,7 @@
 	
 	NSLog(@"%@", i_selectedCity);
 	
-	NSArray *array = [i_clubData objectForKey:i_selectedCity];
+	NSArray *array = [[i_clubData objectForKey:i_selectedCity] sortedArrayUsingSelector:@selector (compare:)];
 	self.i_clubList = array;
 	
 }
@@ -34,24 +36,35 @@
 
 - (UITableViewCell *)tableView:(UITableView *)table cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-	static NSString *CellIdentifier = @"Cell";
+	static NSString *CellIdentifier = @"CustomCell";
 	
-	UITableViewCell *cell = [table dequeueReusableCellWithIdentifier:CellIdentifier];
+	CustomCell *cell = (CustomCell *) [table dequeueReusableCellWithIdentifier:CellIdentifier];
+	
 	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+		NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil];
+		
+		for (id currentObject in topLevelObjects){
+			if ([currentObject isKindOfClass:[UITableViewCell class]]) {
+				cell = (CustomCell *) currentObject;
+				break;
+			}
+		}
 	}
 	
 	// Set up the cell...
+	cell.l_location.textColor = [UIColor redColor];
 	NSString *cellText = [NSString stringWithFormat:@"%@", [i_clubList objectAtIndex:indexPath.row]];
-	[cell.textLabel setText: cellText];
+	cell.l_location.text = cellText;
 	
 	return cell;
 }
 
 - (IBAction)goBack {
 	
+	[self.view removeFromSuperview];
 	SearchOptions *searchOptionsController = [[SearchOptions alloc] initWithNibName:nil bundle:nil];
 	[self presentModalViewController:searchOptionsController animated:YES];
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,7 +76,7 @@
 
 - (void)viewDidUnload {
 	
-    [super viewDidUnload];
+    [super viewDidUnload];	
 }
 
 - (void)dealloc {

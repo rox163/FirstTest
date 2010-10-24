@@ -11,6 +11,9 @@
 
 @interface CustomCell : UITableViewCell {
 
+	IBOutlet UILabel *l_location;
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *l_location;
 
 @end
